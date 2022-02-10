@@ -9,7 +9,7 @@ Fileopen('FirstFile.txt')
 
 def FileCount(filename):
     temp = open(filename)  #open the file
-    for i, l in enumerate(temp):  
+    for i, l in enumerate(temp):
         pass
     return i+1
     temp.close()  #to close the file
