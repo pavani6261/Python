@@ -11,14 +11,15 @@
 #----------------------------
 
 # import xmltodict
-# import pprint
+# import pprint #pprint - pretty print
 #
-# with open('Xml1file.xml','r') as file:
-#     data = file.read()
+# with open('Xml1file.xml','r') as file:  #opening xml file in read mode
+#     data = file.read()   #reading the file and storing in data variable
 #
-# py_dict = xmltodict.parse(data)
+# py_dict = xmltodict.parse(data) # converting xml content to python dictionary type
 #
-# pprint.pprint(py_dict, indent = 4)
+# # print(py_dict)
+# pprint.pprint(py_dict, indent = 4)  # to display in readable format or pretty way
 
 # ---------------------------------------------
 
@@ -26,7 +27,7 @@ import json
 import pprint
 
 import xmltodict
-
+#
 with open('Xml1file.xml','r') as file:
     Data2 = file.read()
     file.close()
@@ -38,3 +39,4 @@ JsonDict = json.dumps(pyDict)
 with open("Xml_JsonData.json","w") as file2:
     file2.write(JsonDict)
     file2.close()
+
